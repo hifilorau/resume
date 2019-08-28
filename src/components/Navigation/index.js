@@ -17,6 +17,12 @@ const Navigation = () => (
           <li>
             <Link to={ROUTES.ABOUT}>About</Link>
           </li>
+          <li>
+            <Link to={ROUTES.RESUME}>Resume</Link>
+          </li>
+          <li>
+            <Link to={ROUTES.CALCULATOR}>Calculator</Link>
+          </li>
         </ul>
       </div>
   </nav>

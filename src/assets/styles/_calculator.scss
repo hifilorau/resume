@@ -1,0 +1,73 @@
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: repeat(5, 75px);
+    grid-template-areas:
+    "screen screen screen screen"
+    "solve allClear decimal plus"
+    "numbers numbers numbers minus"
+    "numbers numbers numbers multiply"
+    "numbers numbers numbers divide";
+    border: 1px solid grey;
+    width: 300px;
+
+
+
+.solve {
+    grid-area: solve;
+}
+
+.number-list {
+    grid-area: numbers;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.calc-number {
+    //    grid-area: numbers;
+       display: inline-block;
+}
+
+.calc-button {
+    // width: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.screen {
+    min-height: 40px;
+    background: grey;
+    padding: .25em;
+    // width: 100%;
+    grid-area: screen;
+}
+
+.multiply {
+    grid-area: multiply;
+}
+
+.divide {
+    grid-area: divide;
+}
+
+.subtract {
+    grid-area: minus;
+}
+
+.add {
+    grid-area: plus;
+}
+
+.all-clear {
+    grid-area: allClear;
+}
+
+.decimal {
+    grid-area: decimal;
+}
+
+}  
